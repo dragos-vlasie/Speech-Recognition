@@ -29,13 +29,53 @@
                 if(e.results[0].isFinal) {
                     p = document.createElement('p');
                     words.appendChild(p);
+
+                    if (p.textContent === 'pause'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/pause")
+
+                    }
+                    if (p.textContent === 'play'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/play")
+
+                    }
+                    if (p.textContent === 'volume up'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/volume/+4")
+
+                    }
+
+                    if (p.textContent === 'volume down'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/volume/-15")
+
+                    }
+                    if (p.textContent === 'next'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/next")
+
+                    }
+
+                    if (p.textContent === 'previous'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/previous")
+
+                    }
                 }
-                console.log(transcript);
+                console.log(p.textContent);
         });
 
         recognition.addEventListener('end', recognition.start);
 
         recognition.start();
+
     
     
     </script>
