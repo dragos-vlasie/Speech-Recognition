@@ -30,46 +30,52 @@
                     p = document.createElement('p');
                     words.appendChild(p);
 
-                    if (p.textContent === 'pause'){
+                }
+                    if (transcript === 'pause'){
                         console.log('puli');
                         
                         window.open("http://localhost:5005/2nd%20Floor/pause")
 
                     }
-                    if (p.textContent === 'play'){
+                    if (transcript === 'submit'){
+                        console.log('puli');
+                        
+                        window.open("http://localhost:5005/2nd%20Floor/say/Submit%20time%20sheet")
+
+                    }
+                    if (transcript === 'play'){
                         console.log('puli');
                         
                         window.open("http://localhost:5005/2nd%20Floor/play")
 
                     }
-                    if (p.textContent === 'volume up'){
+                    if (transcript === 'volume up'){
                         console.log('puli');
                         
-                        window.open("http://localhost:5005/2nd%20Floor/volume/+4")
+                        window.open("http://localhost:5005/2nd%20Floor/volume/+10")
 
                     }
 
-                    if (p.textContent === 'volume down'){
+                    if (transcript === 'volume down'){
                         console.log('puli');
                         
                         window.open("http://localhost:5005/2nd%20Floor/volume/-15")
 
                     }
-                    if (p.textContent === 'next'){
+                    if (transcript === 'next'){
                         console.log('puli');
                         
                         window.open("http://localhost:5005/2nd%20Floor/next")
 
                     }
 
-                    if (p.textContent === 'previous'){
+                    if (transcript === 'previous'){
                         console.log('puli');
                         
                         window.open("http://localhost:5005/2nd%20Floor/previous")
 
                     }
-                }
-                console.log(p.textContent);
+                console.log(transcript);
         });
 
         recognition.addEventListener('end', recognition.start);
