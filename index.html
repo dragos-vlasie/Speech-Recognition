@@ -31,45 +31,49 @@
                     words.appendChild(p);
 
                     if (transcript === 'pause'){
-                        console.log('puli');
-                        
+                        console.log('works');
                         window.open("http://localhost:5005/2nd%20Floor/pause")
 
                     }
                     else if (transcript === 'submit'){
-                        console.log('puli');
+                        console.log('works');
                         
                         window.open("http://localhost:5005/2nd%20Floor/say/Submit%20time%20sheet")
 
                     }
                     else if (transcript === 'play'){
-                        console.log('puli');
+                        console.log('works');
                         
                         window.open("http://localhost:5005/2nd%20Floor/play")
 
                     }
                     else if (transcript === 'volume up'){
-                        console.log('puli');
+                        console.log('works');
                         
                         window.open("http://localhost:5005/2nd%20Floor/volume/+10")
 
                     }
 
                     else if (transcript === 'volume down'){
-                        console.log('puli');
+                        console.log('works');
                         
                         window.open("http://localhost:5005/2nd%20Floor/volume/-15")
 
                     }
                     else if (transcript === 'next'){
-                        console.log('puli');
+                        console.log('next');
                         
-                        window.open("http://localhost:5005/2nd%20Floor/next")
-
+                    theUrl = 'http://192.168.11.86:1880/sonos/next';
+                    fetch(theUrl)
+                    .then(function(response) {
+                        console.log('next');
+                    return ;
+                    })
+    
                     }
 
                     else if (transcript === 'previous'){
-                        console.log('puli');
+                        console.log('works');
                         
                         window.open("http://localhost:5005/2nd%20Floor/previous")
 
